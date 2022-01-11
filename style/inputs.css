@@ -1,0 +1,40 @@
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Charger Document ou Photo';
+  display: inline-block;
+  /*background: linear-gradient(top, #1A084D, #1A084D);*/
+  /*border: 1px solid #999;*/
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+ /*text-shadow: 1px 1px #fff;*/
+  font-weight: 700;
+  font-size: 10pt;
+  text-align: center;
+}
+.custom-file-input:hover::before {
+    //border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #1A084D, #1A084D);
+}
+
+
+.label-file {
+    cursor: pointer;
+    color: #00b1ca;
+    font-weight: bold;
+}
+
+.label-file:hover {
+    color: #25a5c4;
+}
+
+.input-file {
+    display: none;
+}

@@ -1,0 +1,66 @@
+.banner{
+    z-index: 999;
+    padding: 1.1vh;
+    width: 100vw;
+    height: 20vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /*background: white;
+    background: rgba(26,8,77,1);*/
+    background-image: url('../img/space_background.jpg');
+    /*border: solid 1px #1A084D;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: xx-large;
+    color: #C7597A;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner p {
+    padding: 0.5vh;
+}
+
+.banner img{
+    height: 10vh;
+    align-items: center;
+}
+
+.logo{
+    /*height: 100%;*/
+    /*border: solid 1px green;*/
+}
+.logo img {
+    width: 4em;
+    height: 4em;
+    align-items: center;
+}
+
+.name{
+    /*border: solid 1px green;*/
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.name span {
+    color: #FF4F7F;
+}
+
+.name p {
+    font-size: smaller;
+    color: #C7597A;
+}
+
+
+.switch-div {
+    /*
+    border: solid 1px green;
+    */
+    font-family: 'Nunito', sans-serif;
+    font-size: small;
+}
+

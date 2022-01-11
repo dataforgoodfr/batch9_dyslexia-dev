@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- TODO -->
+<!--
+OK Modal for tutorial
+OK link A propos
+OK Gérer le sticky du bouton 'retour haut de page'
+OK Mettre les 3 petites mascotes sous forme de card'
+OK Ajout vagues
+OK Faire ma modal tutoriel
+OK Envoyer un vrai fichier à l'API
+OK Formater le text en prenant en compte les retour à la ligne et les paragraphes
+OK Desktop Mode
+OK Prévoir la modal pour le bouton help
+OK Animation attente conversion en mode desktop
+OK Modifier Bouton charger fichier
+OK revoir section reconnaissance texte en mode dextop sur 2 colonnes
+OK Afficher preview fichier uploadé
+OK Revoir les bouttons
+OK Titre section alignement left en mode desktop
+-->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="img/Gala-10-logo1.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/86b866c647.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap & JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/reset.css"/>
+    <!--<link rel="stylesheet" href="style/style.css" />-->
+    <link rel="stylesheet" href="style/style_OM.css"/>
+    <link rel="stylesheet" href="style/cards.css"/>
+    <link rel="stylesheet" href="style/inputs.css"/>
+    <link rel="stylesheet" href="style/buttons.css"/>
+    <link rel="stylesheet" href="style/footer.css"/>
+    <link rel="stylesheet" href="style/modal.css"/>
+    <link rel="stylesheet" href="style/banner.css"/>
+    <link rel="stylesheet" href="style/switch.css"/>
+    <link rel="stylesheet" href="style/carousel.css"/>
+
+    <style>
+        @font-face {
+            font-family: 'OpenDyslexic';
+            src: url('./fonts/open-dyslexic.ttf') format('embedded-opentype'), /* Internet Explorer */ url('./fonts/open-dyslexic.ttf') format('woff2'), /* Super Modern Browsers */ url('./fonts/open-dyslexic.ttf') format('woff'), /* Pretty Modern Browsers */ url('./fonts/open-dyslexic.ttf') format('truetype'), /* Safari, Android, iOS */ url('./fonts/open-dyslexic.ttf') format('svg'); /* Legacy iOS */
+        }
+    </style>
+    <title>GALA-10</title>
+</head>
+
+<body>
+    <!--banner-->
+    <div class="banner">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="name">
+            <h1>Gala-<span>10</span></h1>
+            <h2 class="mt-2">Mission Devoirs</h2>
+        </div>
+        <!-- boutton de changement de police (OpenDys par défaut)-->
+        <div class="switch-div">
+            <label class="switch">
+                <input type="checkbox" id="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <p>Opendys</p>
+        </div>
+    </div>
+
+    <!--cloud-banner-->
+    <div class="cloud__banner">
+        <img src="img/clouds_banner.png" style="width:100vw;" alt="">
+    </div>
+
+<!-- main-container -->
+<div class="main-container">
+
+    <!-- Premiere section : Présentation -->
+    <div class="row">
+        <div class="first-section">
+            <!--column left-->
+            <div class="first-section__left">
+                <h3 class="mt-3 fs-5">Embarquez sur Gala-<span>10</span>, la première plateforme d’aide aux devoirs accessible à tous les enfants dyslexiques !</h3>
+                <p class="pink mt-3 fs-6"> Gala-<span>10</span> permet de mettre en forme du contenu pédagogique pour en faciliter la lecture.</p>
+                <div class="button-area">
+                   <!-- <div class="btn1">toto</div>
+                    <div class="btn2">titi</div>-->
+                    <div class="btn-with-image">
+                        <img id="astro_love" src="img/astro_love.png" class="icon-button" alt="Astro">
+                        <a href="#about"><p class="btn-hover fs-6">Découvrir Gala-10</p></a>
+                    </div>
+                    <div class="btn-with-image" >
+                        <a href="index2.html?#convert"><p id="tester" class="btn-hover text-center">Tester notre outil&nbsp;</p></a>
+                        <img id="astria" src="img/astria.png" class="icon-button" alt="Astria">
+                    </div>
+                </div>
+            </div>
+
+            <!--column right-->
+            <div class="first-section__right tablet">
+                <img src="img/tablet.png" class="fill" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bouton Retour haut de page -->
+    <div class="up text-end">
+            <a href="#"><img src="img/up.png" alt="up"></a>
+    </div>
+
+    <!-- Nouvelle secton : Reconnaissance de texte -->
+ <!--   <div class="row row__bg ">
+            <div class="section-2">
+                <h2 class="mb-2">Reconnaissance de texte</h2>
+                <span class="fs-6"> Téléchargez et convertissez vos documents en quelques minutes et récupérez le format texte pour pouvoir l’adapter au profil de lecture de votre enfant ! </span>
+            </div>
+    </div>-->
+     <!--<div class="row row__bg ">-->
+
+
+         <!-- Zone boutons upload et prendre photo -->
+  <!--       <div id="convert" class="buttons-area text-center">
+             &lt;!&ndash;<p class="btn btn-hover text-center"><input type="file" id="inputField" class="custom-file-input" accept="image/*;capture=camera"></p>&ndash;&gt;
+             <a href="#"><input class="btn" id="inputField" type="file" accept="image/*;capture=camera"></a>
+             &lt;!&ndash;<a href="#"><input id="myFileInput" class="btn" type="file" accept="image/*;capture=camera"><i class="fas fa-camera-retro"></i>   Prendre une photo</a>&ndash;&gt;
+         </div>-->
+   <!-- </div>-->
+
+    <!-- Section Zone prévisualisation + icons action -->
+    <!--<div class="row row__bg preview">
+            <div class="icons">
+                <a href="#convert" onclick="location.reload()"><i class="fas fa-sync"></i></a>
+                <a href="index2.html?#convert"><i id="myImg"  style="opacity:0.3" class="fas fa-eye"></i>
+                    &lt;!&ndash; Modal Preview file &ndash;&gt;
+                    <div id="myModal" class="modal">
+                        &lt;!&ndash; The Close Button &ndash;&gt;
+                        <span class="close">&times;</span>
+                        &lt;!&ndash; Modal Content (The Image) &ndash;&gt;
+                        <img class="modal-content" id="img01" alt="modal">
+                        &lt;!&ndash; Modal Caption (Image Text) &ndash;&gt;
+                        <div id="caption"></div>
+                    </div>
+                </a>
+                <a href="index2.html?#convert"><i id="save-clipboard" class="fas fa-copy"></i></a>
+                <a href="index2.html?#convert">
+                <svg id="save-to-word" width="35" height="35" viewBox="0 0 188 196" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M103.64 93.7201H110.92L102.54 129.2L91.64 79.3201H74.14L61.48 129.2L52 79.3H33.72L52.28 159.6H70.16L82.7 112.12L93.9 159.6H110.38L131.68 79.3201H103.68V93.7201H103.64Z" />
+                    <path d="M126 176.32H15.1199C13.5399 176.32 12.1799 174.98 12.1799 173.38V14.7C12.1799 13.1 13.5399 11.76 15.1199 11.76H103.24C104.14 11.76 105.12 11.86 106.18 12.06V58.76H152.86C153.06 59.82 153.18 60.82 153.18 61.7V131.3C153.54 131.28 153.9 131.28 154.26 131.28C158 131.28 161.6 131.94 164.92 133.14V61.7C164.92 53.62 160.24 42.34 154.52 36.62L128.28 10.38C122.6 4.68 111.3 0 103.24 0H15.1199C7.03994 0 0.439941 6.62 0.439941 14.7V173.38C0.439941 181.46 7.03994 188.08 15.1199 188.08H135.84C131.66 185.04 128.28 181 126 176.32ZM117.92 17C118.72 17.56 119.42 18.12 120 18.7L146.22 44.94C146.8 45.52 147.34 46.22 147.92 47.02H117.92V17Z" />
+                    <path d="M167.08 162.66H158.8V153.56C158.8 152.72 158.12 152.04 157.28 152.04H151.22C150.38 152.04 149.7 152.72 149.7 153.56V162.66L141.34 162.7C141.04 162.7 140.82 162.86 140.7 163.1C140.7 163.1 140.7 163.1 140.7 163.12C140.68 163.16 140.68 163.22 140.66 163.26C140.66 163.3 140.64 163.34 140.64 163.4C140.64 163.42 140.64 163.42 140.64 163.44C140.64 163.46 140.66 163.5 140.66 163.52C140.68 163.58 140.68 163.64 140.72 163.7C140.74 163.72 140.76 163.76 140.76 163.78C140.78 163.82 140.8 163.86 140.84 163.9L153.36 177.9C153.38 177.94 153.42 177.94 153.46 177.98C153.48 178 153.48 178.02 153.5 178.04C153.52 178.06 153.54 178.06 153.56 178.06C153.6 178.1 153.66 178.12 153.72 178.14C153.74 178.14 153.76 178.16 153.78 178.16C154 178.22 154.22 178.2 154.4 178.06C154.44 178.02 154.46 177.98 154.5 177.94C154.52 177.92 154.54 177.9 154.56 177.88L167.58 163.9C167.62 163.86 167.64 163.8 167.66 163.76C167.68 163.74 167.68 163.72 167.7 163.7C167.72 163.64 167.74 163.58 167.76 163.52C167.76 163.5 167.78 163.48 167.78 163.44V163.4V163.38C167.78 162.98 167.48 162.66 167.08 162.66ZM151.22 150.54H157.28C158.12 150.54 158.8 149.86 158.8 149.02V147.5C158.8 146.66 158.12 145.98 157.28 145.98H151.22C150.38 145.98 149.7 146.66 149.7 147.5V149.02C149.7 149.86 150.38 150.54 151.22 150.54ZM154.24 129.32C135.84 129.32 120.92 144.24 120.92 162.66C120.92 181.08 135.84 196 154.24 196C172.64 196 187.56 181.08 187.56 162.66C187.56 144.26 172.64 129.32 154.24 129.32ZM154.24 189C139.7 189 127.92 177.2 127.92 162.66C127.92 148.12 139.7 136.32 154.24 136.32C168.78 136.32 180.56 148.12 180.56 162.66C180.56 177.2 168.78 189 154.24 189Z"/>
+                </svg>
+                </a>
+            </div>
+
+            &lt;!&ndash;Zone de texte &ndash;&gt;
+            <div class="preview__area">
+                      <p id="preview__area_text">Une fois tes documents téléchargés, appuie sur convertir et tu verras le texte apparaître ici !
+                        <div class="preview__area&#45;&#45;loading"></div>
+                      </p>
+            </div>
+
+            &lt;!&ndash;Bouton Convertir&ndash;&gt;
+            <div class="button-area">
+                <div class="btn-with-image">
+                    <img id="astro-star" src="img/astro_star.png" style="width:65px; height: 65px" alt="Astro Star">
+                    <a href="#convert"><p class="btn btn-upload btn-hover">Lancer la conversion</p></a>
+                    <a href="#convert"><p class="btn-upload-local btn btn-hover">Convertir local</p></a>
+                </div>
+            </div>
+    </div>-->
+
+    <!-- Vague de haut de DIV -->
+
+    <div class="wave">
+        <img src="img/wave-top.svg" style="width:100vw;" alt="">
+    </div>
+    <!-- Nouvelle section : PREVIEW2) -->
+    <div class="row row__bg  mt-5 ">
+        <div id="convert"  class="convert-section">
+            <!--Left column-->
+            <div id="convert-anchor"  class="preview__area2">
+                <div class="icons pb-5 pt-3">
+                    <a href="#convert" onclick="location.reload()"><i class="fas fa-sync"></i></a>
+                    <a href="index2.html?#convert"><i id="myImg"  style="opacity:0.3" class="fas fa-eye"></i>
+                        <!-- Modal Preview file -->
+                        <div id="myModal" class="modal">
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01" alt="modal">
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                        </div>
+                    </a>
+                    <a href="index2.html?#convert"><i id="save-clipboard" class="fas fa-copy"></i></a>
+                    <a href="index2.html?#convert">
+                        <svg id="save-to-word" width="35" height="35" viewBox="0 0 188 196" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M103.64 93.7201H110.92L102.54 129.2L91.64 79.3201H74.14L61.48 129.2L52 79.3H33.72L52.28 159.6H70.16L82.7 112.12L93.9 159.6H110.38L131.68 79.3201H103.68V93.7201H103.64Z" />
+                            <path d="M126 176.32H15.1199C13.5399 176.32 12.1799 174.98 12.1799 173.38V14.7C12.1799 13.1 13.5399 11.76 15.1199 11.76H103.24C104.14 11.76 105.12 11.86 106.18 12.06V58.76H152.86C153.06 59.82 153.18 60.82 153.18 61.7V131.3C153.54 131.28 153.9 131.28 154.26 131.28C158 131.28 161.6 131.94 164.92 133.14V61.7C164.92 53.62 160.24 42.34 154.52 36.62L128.28 10.38C122.6 4.68 111.3 0 103.24 0H15.1199C7.03994 0 0.439941 6.62 0.439941 14.7V173.38C0.439941 181.46 7.03994 188.08 15.1199 188.08H135.84C131.66 185.04 128.28 181 126 176.32ZM117.92 17C118.72 17.56 119.42 18.12 120 18.7L146.22 44.94C146.8 45.52 147.34 46.22 147.92 47.02H117.92V17Z" />
+                            <path d="M167.08 162.66H158.8V153.56C158.8 152.72 158.12 152.04 157.28 152.04H151.22C150.38 152.04 149.7 152.72 149.7 153.56V162.66L141.34 162.7C141.04 162.7 140.82 162.86 140.7 163.1C140.7 163.1 140.7 163.1 140.7 163.12C140.68 163.16 140.68 163.22 140.66 163.26C140.66 163.3 140.64 163.34 140.64 163.4C140.64 163.42 140.64 163.42 140.64 163.44C140.64 163.46 140.66 163.5 140.66 163.52C140.68 163.58 140.68 163.64 140.72 163.7C140.74 163.72 140.76 163.76 140.76 163.78C140.78 163.82 140.8 163.86 140.84 163.9L153.36 177.9C153.38 177.94 153.42 177.94 153.46 177.98C153.48 178 153.48 178.02 153.5 178.04C153.52 178.06 153.54 178.06 153.56 178.06C153.6 178.1 153.66 178.12 153.72 178.14C153.74 178.14 153.76 178.16 153.78 178.16C154 178.22 154.22 178.2 154.4 178.06C154.44 178.02 154.46 177.98 154.5 177.94C154.52 177.92 154.54 177.9 154.56 177.88L167.58 163.9C167.62 163.86 167.64 163.8 167.66 163.76C167.68 163.74 167.68 163.72 167.7 163.7C167.72 163.64 167.74 163.58 167.76 163.52C167.76 163.5 167.78 163.48 167.78 163.44V163.4V163.38C167.78 162.98 167.48 162.66 167.08 162.66ZM151.22 150.54H157.28C158.12 150.54 158.8 149.86 158.8 149.02V147.5C158.8 146.66 158.12 145.98 157.28 145.98H151.22C150.38 145.98 149.7 146.66 149.7 147.5V149.02C149.7 149.86 150.38 150.54 151.22 150.54ZM154.24 129.32C135.84 129.32 120.92 144.24 120.92 162.66C120.92 181.08 135.84 196 154.24 196C172.64 196 187.56 181.08 187.56 162.66C187.56 144.26 172.64 129.32 154.24 129.32ZM154.24 189C139.7 189 127.92 177.2 127.92 162.66C127.92 148.12 139.7 136.32 154.24 136.32C168.78 136.32 180.56 148.12 180.56 162.66C180.56 177.2 168.78 189 154.24 189Z"/>
+                        </svg>
+                    </a>
+                </div>
+                <!--Zone de texte -->
+                <div class="preview__area">
+                    <p id="preview__area_text">Une fois tes documents téléchargés, appuie sur convertir et tu verras le texte apparaître ici !
+                    <div class="preview__area--loading"></div>
+                    </p>
+                </div>
+
+                <!--Bouton Convertir-->
+                <div class="button-area">
+                    <div class="btn-with-image">
+                        <img id="astro-star" src="img/astro_star.png" style="width:65px; height: 65px" alt="Astro Star">
+                        <a href="#convert-anchor"><p class="mt-3 btn-upload btn-hover"><i class="fas fa-sync"></i> Lancer la conversion</p></a>
+                    </div>
+                    <div>
+                        <a href="#convert-anchor"><p class="mt-3 btn-upload-local btn btn-hover">Convertir local</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--right column-->
+            <div class="convert__text">
+                <!--Help icon-->
+                <div class="help text-end">
+                    <a href="#"><img id="help" src="img/help.png" alt="">
+                        <!-- Modal Help-->
+                        <div id="myModal2" class="modal">
+                            <!-- The Close Button -->
+                            <span class="close2">&times;</span>
+                            <!-- Modal Content (The Image) -->
+                            <!--<img class="modal-content" id="img02" alt="modal">-->
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption2" >
+                                <!--<p class="">Tutoriel d'Utilisation du Convertisseur</p>-->
+                                <h2 class="mb-3">Tutoriel d'Utilisation du Convertisseur</h2>
+                                Vous pouvez:
+                                <ol>
+                                    <li>1 - Visualiser votre document soumis <i class="fas fa-eye"></i></li>
+                                    <li>2 - Copier le texte brut produit dans votre presse-papier <i class="fas fa-copy"></i></li>
+                                    <li>3 - Générer un document word contenant le texte
+                                        <svg width="20" height="20" viewBox="0 0 188 196" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M103.64 93.7201H110.92L102.54 129.2L91.64 79.3201H74.14L61.48 129.2L52 79.3H33.72L52.28 159.6H70.16L82.7 112.12L93.9 159.6H110.38L131.68 79.3201H103.68V93.7201H103.64Z" />
+                                            <path d="M126 176.32H15.1199C13.5399 176.32 12.1799 174.98 12.1799 173.38V14.7C12.1799 13.1 13.5399 11.76 15.1199 11.76H103.24C104.14 11.76 105.12 11.86 106.18 12.06V58.76H152.86C153.06 59.82 153.18 60.82 153.18 61.7V131.3C153.54 131.28 153.9 131.28 154.26 131.28C158 131.28 161.6 131.94 164.92 133.14V61.7C164.92 53.62 160.24 42.34 154.52 36.62L128.28 10.38C122.6 4.68 111.3 0 103.24 0H15.1199C7.03994 0 0.439941 6.62 0.439941 14.7V173.38C0.439941 181.46 7.03994 188.08 15.1199 188.08H135.84C131.66 185.04 128.28 181 126 176.32ZM117.92 17C118.72 17.56 119.42 18.12 120 18.7L146.22 44.94C146.8 45.52 147.34 46.22 147.92 47.02H117.92V17Z" />
+                                            <path d="M167.08 162.66H158.8V153.56C158.8 152.72 158.12 152.04 157.28 152.04H151.22C150.38 152.04 149.7 152.72 149.7 153.56V162.66L141.34 162.7C141.04 162.7 140.82 162.86 140.7 163.1C140.7 163.1 140.7 163.1 140.7 163.12C140.68 163.16 140.68 163.22 140.66 163.26C140.66 163.3 140.64 163.34 140.64 163.4C140.64 163.42 140.64 163.42 140.64 163.44C140.64 163.46 140.66 163.5 140.66 163.52C140.68 163.58 140.68 163.64 140.72 163.7C140.74 163.72 140.76 163.76 140.76 163.78C140.78 163.82 140.8 163.86 140.84 163.9L153.36 177.9C153.38 177.94 153.42 177.94 153.46 177.98C153.48 178 153.48 178.02 153.5 178.04C153.52 178.06 153.54 178.06 153.56 178.06C153.6 178.1 153.66 178.12 153.72 178.14C153.74 178.14 153.76 178.16 153.78 178.16C154 178.22 154.22 178.2 154.4 178.06C154.44 178.02 154.46 177.98 154.5 177.94C154.52 177.92 154.54 177.9 154.56 177.88L167.58 163.9C167.62 163.86 167.64 163.8 167.66 163.76C167.68 163.74 167.68 163.72 167.7 163.7C167.72 163.64 167.74 163.58 167.76 163.52C167.76 163.5 167.78 163.48 167.78 163.44V163.4V163.38C167.78 162.98 167.48 162.66 167.08 162.66ZM151.22 150.54H157.28C158.12 150.54 158.8 149.86 158.8 149.02V147.5C158.8 146.66 158.12 145.98 157.28 145.98H151.22C150.38 145.98 149.7 146.66 149.7 147.5V149.02C149.7 149.86 150.38 150.54 151.22 150.54ZM154.24 129.32C135.84 129.32 120.92 144.24 120.92 162.66C120.92 181.08 135.84 196 154.24 196C172.64 196 187.56 181.08 187.56 162.66C187.56 144.26 172.64 129.32 154.24 129.32ZM154.24 189C139.7 189 127.92 177.2 127.92 162.66C127.92 148.12 139.7 136.32 154.24 136.32C168.78 136.32 180.56 148.12 180.56 162.66C180.56 177.2 168.78 189 154.24 189Z"/>
+                                        </svg>
+                                    </li>
+                                </ol>
+                                <br>
+                                <iframe class="modal-content" src="https://www.youtube.com/embed/sbxBQbRlaYA?start=5775&controls=1&showinfo=0&rel=0&autoplay=0&loop=0&mute=0" allowfullscreen style="text-align: left; width: 75vw; height: 75vh"></iframe>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--Fin Modal Help-->
+
+                <!--Right Column -->
+                <div class="convert__text__title text-center">
+                    <h2 class="mb-2 text-center">Reconnaissance de texte</h2>
+                </div>
+                    <div class="text-start mt-3"><span class="fs-5"> Téléchargez et convertissez vos documents en quelques minutes et récupérez le format texte pour pouvoir l’adapter au profil de lecture de votre enfant ! </span></div>
+                    <div class="text-center mt-3 mb-2" >
+                        <!--<label id="tester2" class="btn btn-hover text-center"><i class="fas fa-download"></i><input type="file" class="custom-file-input" accept="image/*;capture=camera"></label>-->
+                        <!-- Generated markup by the plugin -->
+
+                        <label for="inputField" class="btn label-file" data-bs-toggle="tooltip" title="Some tooltip text!"><i class="fas fa-download"></i> Charger un document ou photo</label>
+                        <input id="inputField" class="input-file" type="file" accept=".pdf, .png, .jpg, .jpeg;capture=camera" >
+                    </div>
+
+                    <!-- tooltip on charger button-->
+                    <div class="tooltip bs-tooltip-top" role="tooltip">
+                        <div class="tooltip-arrow"></div>
+                        <div class="tooltip-inner">
+                            Max size : 1Mo.
+                        </div>
+                    </div>
+
+                    <div class="preview__file text-center mt-3">
+                        <p class="test-start">Aucun Fichier sélectionné</p>
+                        <p class="test-start pink">(Taille Max : 1 Mo)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Vague de bas de DIV -->
+    <div class="wave wave-bottom">
+        <img src="img/wave-bottom.svg" style="width:100vw;" alt="">
+    </div>
+
+    <!-- Nouvelle section : Gala-10 c'est quoi (a propos) -->
+    <div class="row mt-5">
+        <div class="about">
+            <!--Left column-->
+            <div class="about__text">
+                <div class="about__title" id="about">
+                    <h2 >Gala-<span>10</span> c'est quoi ?</h2>
+                    <img src="img/astro_book.png" class="about__icon" alt="">
+                </div>
+                <div>
+                    <p>A travers la plateforme Gala-<span>10</span>, l’équipe Dyslex'IA propose un outil adapté et adaptable à chaque enfant et à chaque dyslexie.</p>
+                    <br>
+                    <p>Il permet de télécharger des photos ou fichiers pdf, d'adapter le contenu automatiquement en fonction du profil de lecture. </p>
+                    <br>
+                    <p>🚀 Avec son design ludique, Gala-<span>10</span> rend la période des devoirs plus agréable, valorise les efforts et la prise d’initiative de l'enfant !</p>
+                    <div class="text-center mt-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLScH6E7W7xRkR4GoA2wADxA51ED0clQfWQapGQ0WheXs8rNc8A/viewform" target="_blank"><button class="btn">Restez informé</button></a></div>
+                </div>
+            </div>
+
+            <!--right column-->
+            <div class="about__video">
+                    <iframe src="https://www.youtube.com/embed/sbxBQbRlaYA?start=5775&controls=0&showinfo=0&rel=0&autoplay=0&loop=1&mute=0" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+        </div>
+    </div>
+
+    <!-- Vague de haut de DIV -->
+    <div class="wave wave-top mt-5">
+        <img src="img/wave-top.svg" style="width:100vw;" alt="">
+    </div>
+
+    <!-- Nouvelle section : Equipe Dyslex'IA -->
+    <div class="row row__bg text-start">
+            <div class="text-start">
+                <h2 class="text-xs-center text-lg-left mb-3">L’équipe Dyslex’IA</h2>
+                 <!-- Les cofondateurs -->
+                <!--<h3 class="mt-3 text-center">Les Cofondateurs</h3>-->
+                <div class="founders ">
+                    <div class="avatar">
+                        <img src="img/founders_amelie.jpeg" alt="amelie">
+                        Amelie<br>Jariel
+                        <span class="mt-1 fs-6">- Com - </span>
+                    </div>
+                    <div class="avatar">
+                        <img src="img/founders_loic.jpeg" alt="loic">
+                        Loic<br>Serisier
+                        <span class="mt-1 fs-6">- Business - </span>
+                    </div>
+                    <div class="avatar">
+                        <img src="img/founders_sharon.jpeg" alt="sharon">
+                         Sharon<br>Baurberg
+                         <span class="mt-1 fs-6">- Tech - </span>
+                    </div>
+                </div>
+        </div>
+
+         <!-- Les Bénévoles -->
+        <h3 class="text-center mt-2">Avec l'aide des Bénévoles</h3>
+        <div class="volunteers mt-4 text-center">
+            <span>Olivier</span>
+            <span>Noemie</span>
+            <span>Eleonor</span>
+            <span>Arthur</span>
+            <span>Brice</span>
+            <span>Charlotte</span>
+            <span>Simon</span>
+            <span>Julien</span>
+            <span>Isabelle</span>
+            <span>Nathan</span>
+            <span>Roberto</span>
+            <span>Lana</span>
+            <span>Camila</span>
+        </div>
+    </div>
+
+    <!-- Vague de bas de DIV -->
+    <div class="wave wave-bottom">
+        <img src="img/wave-bottom.svg" style="width:100vw;" alt="">
+    </div>
+
+    <!-- Nouvelle section : Les partenaires -->
+    <div class="row">
+        <div class="text-left">
+                <h2 class="text-xs-center text-lg-left mt-3 mb-5">Nos Partenaires</h2>
+                <div class="partners__cards text-center mb-5">
+                   <!--<div class="card">-->
+                        <a href="https://www.aifortomorrow.co/"><img src="img/part_AI_F2.png" class="partners__card" alt="IA for Tomorrow"></a>
+                   <!-- </div>
+                    <div class="card">-->
+                        <a href="https://dataforgood.fr/"><img src="img/part_D4G.png" style="width:60px; height: 80px" alt="Data For Good"></a>
+                    <!--</div>
+                    <div class="card">-->
+                        <a href="https://www.hub-franceia.fr"><img src="img/part_hubIA.png" class="partners__card" alt="Hub IA France"></a>
+                   <!-- </div>-->
+                </div>
+            </div>
+        </div>
+
+    <!-- Vague de haut de DIV -->
+    <div class="wave wave-top mt-3">
+        <img src="img/wave-top.svg" style="width:100vw;" alt="">
+    </div>
+
+    <!-- Nouvelle section : La Communauté -->
+    <div class="row row__bg">
+                <h2 class="mb-3 text-xs-center text-lg-left">Notre Communauté</h2>
+                <div class="community text-center">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/IaDyslex"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/dyslex-ia/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/dataforgoodfr/batch9_dyslexia"><i class="fab fa-github"></i></a>
+                    <a href="mailto:support@dyslexia.com"><i class="fa fa-envelope"></i></a>
+                </div>
+                <div class="cloud__footer">
+                   <img src="img/clouds_footer.png" style="width:100vw;" alt="">
+                </div>
+    </div>
+
+    <!-- Pied de page (footer) -->
+    <footer class="footer-distributed col-sm-12 col-lg-12">
+      <div class="footer-left">
+        <h3>Gala-<span>10</span></h3>
+        <p class="footer-links">
+          <a href="#about" class="link-1">A Propos</a>
+          <a href="#">FAQ</a>
+          <a href="https://docs.google.com/forms/d/1Uc230wgPAXWxaMk5jMpZ9fmYULSNGkMeFPeZ53B2Z1g/prefill">Contact</a>
+        </p>
+        <p class="footer-company-name">Developpé par Dyslex'IA © 2021</p>
+      </div>
+    </footer>
+</div>
+    <!-- link javascripts -->
+    <script src="lib/switch.js" type="text/javascript"></script>
+     <script src="lib/preview-file.js" type="text/javascript"></script>
+    <script src="lib/apiV1.js" type="text/javascript"></script>
+    <script src="lib/api.js" type="text/javascript"></script>
+    <script src="lib/modal.js" type="text/javascript"></script>
+    <script src="lib/modal2.js" type="text/javascript"></script>
+    <script>
+        if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+            document.querySelector(".btn-upload-local").style.visibility = 'hidden';
+            /*console.log("It's not a local server!");*/
+        }
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+        if( isMobile.any() ) {
+            console.log('Mobile');
+        }
+    </script>
+</body>
+</html>

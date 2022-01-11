@@ -1,0 +1,130 @@
+
+.btn {
+    /*width: 50%;*/
+    /*width: 20em;*/
+   /* display: flex;*/
+    color: #1A084D;
+    border: 1px solid #1A084D;
+    background-color: white;
+    padding: 1.1vh;
+    border-radius: 15px;
+    /*border: solid 2px #EAE8E8;*/
+    /*    font-weight: bold;
+    font-size: larger;*/
+    /*margin-bottom: 2.5vh;*/
+}
+
+.btn:hover {
+    opacity: 1;
+    color: white;
+    background-color: #1A084D;
+    border: solid 1px #1A084D;
+}
+
+/*.btn-icon {
+!*    overflow: hidden;
+    height: 65px;*!
+    align-items: center;
+    display: flex;
+    color: #451171;
+    background-color: #EAE8E8;
+    padding: 10px 10px;
+    border-radius: 50px;
+    !*border: solid 2px #EAE8E8;*!
+
+}*/
+
+.icon-button{
+    width: 65px;
+    height: 65px;
+}
+
+/*.btn-icon:hover {
+    opacity: 1;
+    background-color: white;
+    !*border: solid 2px #451171;*!
+}
+
+.btn-icon-img{
+    height: 70%;
+    margin-left: 20px;
+}
+
+.btn-icon-text{
+    font-size: medium;
+    margin-left: 15px;
+}*/
+
+.btn-upload {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.btn-with-image {
+    display: flex;
+    /*justify-content: center;*/
+    /*
+    align-items: start;
+    */
+    /*margin-top: 2em;*/
+    /*background-color: #1A084D;*/
+    /*padding: 2vh;*/
+    /*
+    border: solid 2px #EAE8E8;
+    */
+    /*    font-weight: bold;
+    font-size: larger;*/
+   /* margin-bottom: 2.5vh;*/
+}
+.btn-with-image p {
+    /*border: solid 1px green;*/
+    padding: 2.5vh;
+    margin: 0.8vh 0;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #1A084D;
+    border: 1px solid #1A084D;
+    background-color: white;
+}
+
+#astro_love {
+    position: relative;
+    top: -10px;
+    bottom: 0;
+    left: 27px;
+    right: 0;
+}
+
+#astria {
+    position: relative;
+    top: -10px;
+    bottom: 0;
+    left: -30px;
+    right: 0;
+}
+
+#astro-star {
+    position: relative;
+    top: 0px;
+    bottom: 0;
+    left: 30px;
+    right: 0;
+}
+
+#tester {
+    color: #F8F0F0;
+    border: solid 1px #FFE9EF;
+    background: #C85479;
+}
+
+#tester:hover {
+    color: #F8F0F0;
+    background-color: #451171;
+    border: solid 1px #451171;
+}
+
+.btn-hover:hover {
+    color: #F8F0F0;
+    background-color: #451171;
+    border: solid 1px #451171;
+}
