@@ -11,10 +11,6 @@
 - CSS
 - Vanilla JS
 
-# Local Development
-
-## Installation Manual setup on local host machine
-
 #### Prerequisites
 
 If you don't already have them :
@@ -22,8 +18,6 @@ If you don't already have them :
 - Install
 - Install NodeJS (version xx, you may use [nvm](https://github.com/nvm-sh/nvm) if you have several versions)
 - Install yarn `npm i -g yarn`
-
-#### Dependencies
 
 
 #### Hosting
@@ -34,12 +28,15 @@ If you don't already have them :
 
 More documentation [in the `doc` directory](doc/).
 
+
 # Contributing
 
-Visit [CONTRIBUTING](https://github.com/omontigny/batch9_dyslexia_front/blob/main/CONTRIBUTING.md)
+## Fondateurs
+ Amelie, Loic et Sharon
 
-# Thanks to all our contributors
-@Nathanlauga @omontigny
+## Merci à tous les contributeurs
+
+ Arthur, Brice, Camilia, Charlotte, Eleonor, Isabelle, Julien,  Lana, Nathan, Noemie, Olivier, Roberto, Simon
 
 # Global view
 
