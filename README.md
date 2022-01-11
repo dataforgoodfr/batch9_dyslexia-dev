@@ -3,7 +3,7 @@
 ![Capture d’écran 2022-01-11 à 11 06 00](https://user-images.githubusercontent.com/17742618/148924371-bfe2bdb8-614c-4af2-9517-bf4b8e15d665.png)
 
 
-https://www.linkedin.com/posts/dyslex-ia_dyslexia-dyslexie-dys-activity-6883465972653682688-m1Sl
+[Video LinkedIn](https://www.linkedin.com/posts/dyslex-ia_dyslexia-dyslexie-dys-activity-6883465972653682688-m1Sl)
 
 # Stack
 
