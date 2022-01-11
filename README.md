@@ -41,8 +41,7 @@ Visit [CONTRIBUTING](https://github.com/omontigny/batch9_dyslexia_front/blob/mai
 # Thanks to all our contributors
 
 
-# Code formatting
+# Global view
 
 
-
-# Testing
+![Dyslexia_font](https://user-images.githubusercontent.com/17742618/148927650-181d1251-eb38-401d-a3e9-3f2b4cd29c47.png)
