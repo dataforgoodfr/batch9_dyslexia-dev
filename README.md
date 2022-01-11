@@ -39,7 +39,7 @@ More documentation [in the `doc` directory](doc/).
 Visit [CONTRIBUTING](https://github.com/omontigny/batch9_dyslexia_front/blob/main/CONTRIBUTING.md)
 
 # Thanks to all our contributors
-
+@Nathanlauga @omontigny
 
 # Global view
 
