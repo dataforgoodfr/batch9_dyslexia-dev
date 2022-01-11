@@ -30,15 +30,15 @@ More documentation [in the `doc` directory](doc/).
 
 
 # Contributing
+Visit [CONTRIBUTING](https://github.com/omontigny/batch9_dyslexia_front/blob/main/CONTRIBUTING.md)
 
-## Fondateurs
+## Founders
  Amelie, Loic et Sharon
 
-## Merci à tous les contributeurs
+## Thanks to all contributors
 
  Arthur, Brice, Camilia, Charlotte, Eleonor, Isabelle, Julien,  Lana, Nathan, Noemie, Olivier, Roberto, Simon
 
 # Global view
-
 
 ![Dyslexia_font](https://user-images.githubusercontent.com/17742618/148927650-181d1251-eb38-401d-a3e9-3f2b4cd29c47.png)
