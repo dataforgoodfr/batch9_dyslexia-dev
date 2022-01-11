@@ -1,25 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-<!-- TODO -->
-<!--
-OK Modal for tutorial
-OK link A propos
-OK Gérer le sticky du bouton 'retour haut de page'
-OK Mettre les 3 petites mascotes sous forme de card'
-OK Ajout vagues
-OK Faire ma modal tutoriel
-OK Envoyer un vrai fichier à l'API
-OK Formater le text en prenant en compte les retour à la ligne et les paragraphes
-OK Desktop Mode
-OK Prévoir la modal pour le bouton help
-OK Animation attente conversion en mode desktop
-OK Modifier Bouton charger fichier
-OK revoir section reconnaissance texte en mode dextop sur 2 colonnes
-OK Afficher preview fichier uploadé
-OK Revoir les bouttons
-OK Titre section alignement left en mode desktop
--->
-
 
 <head>
     <meta charset="UTF-8">
@@ -36,17 +16,11 @@ OK Titre section alignement left en mode desktop
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bootstrap & JQuery -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
-
-
 
 
     <!-- CSS -->
     <link rel="stylesheet" href="style/reset.css" />
-    <!--<link rel="stylesheet" href="style/style.css" />-->
-    <link rel="stylesheet" href="style/style_OM.css" />
+    <link rel="stylesheet" href="style/upload.css" />
     <link rel="stylesheet" href="style/cards.css" />
     <link rel="stylesheet" href="style/inputs.css" />
     <link rel="stylesheet" href="style/buttons.css" />
@@ -135,66 +109,6 @@ OK Titre section alignement left en mode desktop
         <div class="up text-end">
             <a href="#"><img src="img/up.png" alt="up"></a>
         </div>
-
-        <!-- Nouvelle secton : Reconnaissance de texte -->
-        <!--   <div class="row row__bg ">
-            <div class="section-2">
-                <h2 class="mb-2">Reconnaissance de texte</h2>
-                <span class="fs-6"> Téléchargez et convertissez vos documents en quelques minutes et récupérez le format texte pour pouvoir l’adapter au profil de lecture de votre enfant ! </span>
-            </div>
-    </div>-->
-        <!--<div class="row row__bg ">-->
-
-
-        <!-- Zone boutons upload et prendre photo -->
-        <!--       <div id="convert" class="buttons-area text-center">
-             &lt;!&ndash;<p class="btn btn-hover text-center"><input type="file" id="inputField" class="custom-file-input" accept="image/*;capture=camera"></p>&ndash;&gt;
-             <a href="#"><input class="btn" id="inputField" type="file" accept="image/*;capture=camera"></a>
-             &lt;!&ndash;<a href="#"><input id="myFileInput" class="btn" type="file" accept="image/*;capture=camera"><i class="fas fa-camera-retro"></i>   Prendre une photo</a>&ndash;&gt;
-         </div>-->
-        <!-- </div>-->
-
-        <!-- Section Zone prévisualisation + icons action -->
-        <!--<div class="row row__bg preview">
-            <div class="icons">
-                <a href="#convert" onclick="location.reload()"><i class="fas fa-sync"></i></a>
-                <a href="upload.html?#convert"><i id="myImg"  style="opacity:0.3" class="fas fa-eye"></i>
-                    &lt;!&ndash; Modal Preview file &ndash;&gt;
-                    <div id="myModal" class="modal">
-                        &lt;!&ndash; The Close Button &ndash;&gt;
-                        <span class="close">&times;</span>
-                        &lt;!&ndash; Modal Content (The Image) &ndash;&gt;
-                        <img class="modal-content" id="img01" alt="modal">
-                        &lt;!&ndash; Modal Caption (Image Text) &ndash;&gt;
-                        <div id="caption"></div>
-                    </div>
-                </a>
-                <a href="upload.html?#convert"><i id="save-clipboard" class="fas fa-copy"></i></a>
-                <a href="upload.html?#convert">
-                <svg id="save-to-word" width="35" height="35" viewBox="0 0 188 196" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M103.64 93.7201H110.92L102.54 129.2L91.64 79.3201H74.14L61.48 129.2L52 79.3H33.72L52.28 159.6H70.16L82.7 112.12L93.9 159.6H110.38L131.68 79.3201H103.68V93.7201H103.64Z" />
-                    <path d="M126 176.32H15.1199C13.5399 176.32 12.1799 174.98 12.1799 173.38V14.7C12.1799 13.1 13.5399 11.76 15.1199 11.76H103.24C104.14 11.76 105.12 11.86 106.18 12.06V58.76H152.86C153.06 59.82 153.18 60.82 153.18 61.7V131.3C153.54 131.28 153.9 131.28 154.26 131.28C158 131.28 161.6 131.94 164.92 133.14V61.7C164.92 53.62 160.24 42.34 154.52 36.62L128.28 10.38C122.6 4.68 111.3 0 103.24 0H15.1199C7.03994 0 0.439941 6.62 0.439941 14.7V173.38C0.439941 181.46 7.03994 188.08 15.1199 188.08H135.84C131.66 185.04 128.28 181 126 176.32ZM117.92 17C118.72 17.56 119.42 18.12 120 18.7L146.22 44.94C146.8 45.52 147.34 46.22 147.92 47.02H117.92V17Z" />
-                    <path d="M167.08 162.66H158.8V153.56C158.8 152.72 158.12 152.04 157.28 152.04H151.22C150.38 152.04 149.7 152.72 149.7 153.56V162.66L141.34 162.7C141.04 162.7 140.82 162.86 140.7 163.1C140.7 163.1 140.7 163.1 140.7 163.12C140.68 163.16 140.68 163.22 140.66 163.26C140.66 163.3 140.64 163.34 140.64 163.4C140.64 163.42 140.64 163.42 140.64 163.44C140.64 163.46 140.66 163.5 140.66 163.52C140.68 163.58 140.68 163.64 140.72 163.7C140.74 163.72 140.76 163.76 140.76 163.78C140.78 163.82 140.8 163.86 140.84 163.9L153.36 177.9C153.38 177.94 153.42 177.94 153.46 177.98C153.48 178 153.48 178.02 153.5 178.04C153.52 178.06 153.54 178.06 153.56 178.06C153.6 178.1 153.66 178.12 153.72 178.14C153.74 178.14 153.76 178.16 153.78 178.16C154 178.22 154.22 178.2 154.4 178.06C154.44 178.02 154.46 177.98 154.5 177.94C154.52 177.92 154.54 177.9 154.56 177.88L167.58 163.9C167.62 163.86 167.64 163.8 167.66 163.76C167.68 163.74 167.68 163.72 167.7 163.7C167.72 163.64 167.74 163.58 167.76 163.52C167.76 163.5 167.78 163.48 167.78 163.44V163.4V163.38C167.78 162.98 167.48 162.66 167.08 162.66ZM151.22 150.54H157.28C158.12 150.54 158.8 149.86 158.8 149.02V147.5C158.8 146.66 158.12 145.98 157.28 145.98H151.22C150.38 145.98 149.7 146.66 149.7 147.5V149.02C149.7 149.86 150.38 150.54 151.22 150.54ZM154.24 129.32C135.84 129.32 120.92 144.24 120.92 162.66C120.92 181.08 135.84 196 154.24 196C172.64 196 187.56 181.08 187.56 162.66C187.56 144.26 172.64 129.32 154.24 129.32ZM154.24 189C139.7 189 127.92 177.2 127.92 162.66C127.92 148.12 139.7 136.32 154.24 136.32C168.78 136.32 180.56 148.12 180.56 162.66C180.56 177.2 168.78 189 154.24 189Z"/>
-                </svg>
-                </a>
-            </div>
-
-            &lt;!&ndash;Zone de texte &ndash;&gt;
-            <div class="preview__area">
-                      <p id="preview__area_text">Une fois tes documents téléchargés, appuie sur convertir et tu verras le texte apparaître ici !
-                        <div class="preview__area&#45;&#45;loading"></div>
-                      </p>
-            </div>
-
-            &lt;!&ndash;Bouton Convertir&ndash;&gt;
-            <div class="button-area">
-                <div class="btn-with-image">
-                    <img id="astro-star" src="img/astro_star.png" style="width:65px; height: 65px" alt="Astro Star">
-                    <a href="#convert"><p class="btn btn-upload btn-hover">Lancer la conversion</p></a>
-                    <a href="#convert"><p class="btn-upload-local btn btn-hover">Convertir local</p></a>
-                </div>
-            </div>
-    </div>-->
 
         <!-- Vague de haut de DIV -->
 
@@ -292,9 +206,6 @@ OK Titre section alignement left en mode desktop
                     </div>
                     <div class="text-start mt-3"><span class="fs-5"> Téléchargez et convertissez vos documents en quelques minutes et récupérez le format texte pour pouvoir l’adapter au profil de lecture de votre enfant ! </span></div>
                     <div class="text-center mt-3 mb-2">
-                        <!--<label id="tester2" class="btn btn-hover text-center"><i class="fas fa-download"></i><input type="file" class="custom-file-input" accept="image/*;capture=camera"></label>-->
-                        <!-- Generated markup by the plugin -->
-
                         <label for="inputField" class="btn label-file" data-bs-toggle="tooltip" title="Some tooltip text!"><i class="fas fa-download"></i> Charger un document ou photo</label>
                         <input id="inputField" class="input-file" type="file" accept=".pdf, .png, .jpg, .jpeg;capture=camera">
                     </div>
@@ -407,15 +318,9 @@ OK Titre section alignement left en mode desktop
             <div class="text-left">
                 <h2 class="text-xs-center text-lg-left mt-3 mb-5">Nos Partenaires</h2>
                 <div class="partners__cards text-center mb-5">
-                    <!--<div class="card">-->
                     <a href="https://www.aifortomorrow.co/"><img src="img/part_AI_F2.png" class="partners__card" alt="IA for Tomorrow"></a>
-                    <!-- </div>
-                    <div class="card">-->
                     <a href="https://dataforgood.fr/"><img src="img/part_D4G.png" style="width:60px; height: 80px" alt="Data For Good"></a>
-                    <!--</div>
-                    <div class="card">-->
                     <a href="https://www.hub-franceia.fr"><img src="img/part_hubIA.png" class="partners__card" alt="Hub IA France"></a>
-                    <!-- </div>-->
                 </div>
             </div>
         </div>
@@ -463,7 +368,6 @@ OK Titre section alignement left en mode desktop
     <script>
         if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
             document.querySelector(".btn-upload-local").style.visibility = 'hidden';
-            /*console.log("It's not a local server!");*/
         }
         var isMobile = {
             Android: function() {
