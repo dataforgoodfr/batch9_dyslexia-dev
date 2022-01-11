@@ -33,11 +33,11 @@ More documentation [in the `doc` directory](doc/).
 Visit [CONTRIBUTING](https://github.com/omontigny/batch9_dyslexia_front/blob/main/CONTRIBUTING.md)
 
 ## Founders
- Amelie, Loic et Sharon
+ [Amelie](https://www.linkedin.com/in/amelie-jariel/), [Loic](https://www.linkedin.com/in/loic-serisier/) and [Sharon](https://www.linkedin.com/in/sharonbaurberg/)
 
 ## Thanks to all contributors
 
- Arthur, Brice, Camilia, Charlotte, Eleonor, Isabelle, Julien,  Lana, Nathan, Noemie, Olivier, Roberto, Simon
+ [Arthur](https://www.linkedin.com/in/arthur-ecoffet-6302a1160/), [Brice](https://www.linkedin.com/in/brice-guillozet/), Camilia, [Charlotte](https://www.linkedin.com/in/charlotte-grégoire-a7323234/), Eleonor, [Elodie](https://www.linkedin.com/in/elodie-morel-5a37a059/), [Isabelle](https://www.linkedin.com/in/isabelle-maroquesne-0b9691b/), [Julien](https://www.linkedin.com/in/julien-levieux-dev/),  Lana, [Nathan](https://www.linkedin.com/in/nathanlauga/), [Noemie](https://www.linkedin.com/in/noemielecorps/), [Olivier](https://www.linkedin.com/in/omontigny/), [Roberto](https://www.linkedin.com/in/roberto-castro-886978104/), [Simon](https://www.linkedin.com/in/simon-destanque/)
 
 # Global view
 
