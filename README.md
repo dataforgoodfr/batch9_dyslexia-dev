@@ -1,8 +1,6 @@
 # Front-End Dyslexia
 
-![Capture d’écran 2022-01-11 à 11 06 00](https://user-images.githubusercontent.com/17742618/148924371-bfe2bdb8-614c-4af2-9517-bf4b8e15d665.png)
-
-![Banner](Dyslexia_banner.jpg?raw=true "banner")
+![Banner](doc/img/Dyslexia_banner.jpg?raw=true "banner")
 
 [Video LinkedIn](https://www.linkedin.com/posts/dyslex-ia_dyslexia-dyslexie-dys-activity-6883465972653682688-m1Sl)
 
@@ -42,4 +40,4 @@ Visit [CONTRIBUTING](https://github.com/omontigny/batch9_dyslexia_front/blob/mai
 
 # Global view
 
-![Banner](Dyslexia_front.jpg?raw=true "global view")
+![Banner](doc/img/Dyslexia_front.jpg?raw=true "global view")
